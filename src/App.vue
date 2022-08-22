@@ -1,44 +1,52 @@
 <template>
-    <section>
-        <header>
-            <h1>My Friends</h1>
-        </header>
-        <friend-contact name="Manu Lorenz" phone="09088952681" email="manuellorenz@gmail.com"></friend-contact>
-        <friend-contact name="Julia Jones" phone="09277779277" email="juliajones@gmail.com"></friend-contact>
-    </section>
+  <section>
+    <header>
+      <h1>My Friends</h1>
+    </header>
+    <friend-contact
+      name="Manu Lorenz"
+      phone="09088952681"
+      email="manuellorenz@gmail.com"
+      :is-favorite = "true"
+    ></friend-contact>
+    <friend-contact
+      name="Julia Jones"
+      phone="09277779277"
+      email="juliajones@gmail.com"
+      :is-favorite = "false"
+    ></friend-contact>
+  </section>
 </template>
 <script>
-
-
-export default{
-    data(){
-        return {
-            friends:[
-                {
-                    id:'Manu',
-                    name: 'Manuel Lorenz',
-                    phone: '09088952681',
-                    email: 'manuellorenz@gmail.com',
-                },
-                {
-                    id:'Jules',
-                    name: 'Julia Jones',
-                    phone: '09277779277',
-                    email: 'juliajones@gmail.com',
-                }
-            ]
-        }
-    }
-}
+export default {
+  data() {
+    return {
+      friends: [
+        {
+          id: "Manu",
+          name: "Manuel Lorenz",
+          phone: "09088952681",
+          email: "manuellorenz@gmail.com",
+        },
+        {
+          id: "Jules",
+          name: "Julia Jones",
+          phone: "09277779277",
+          email: "juliajones@gmail.com",
+        },
+      ],
+    };
+  },
+};
 </script>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 body {
@@ -96,5 +104,4 @@ header {
   border-color: #ec3169;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
 }
-
 </style>
