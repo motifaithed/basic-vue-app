@@ -3,8 +3,8 @@
         <header>
             <h1>My Friends</h1>
         </header>
-        <friend-contact></friend-contact>
-        <friend-contact></friend-contact>
+        <friend-contact name="Manu Lorenz" phone="09088952681" email="manuellorenz@gmail.com"></friend-contact>
+        <friend-contact name="Julia Jones" phone="09277779277" email="juliajones@gmail.com"></friend-contact>
     </section>
 </template>
 <script>
